@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: #1e293b;
+  padding: 25px;
+  width: 340px;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+}
+
+.circle-wrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+}
+
+/* Start progress from top */
+svg {
+  transform: rotate(-90deg);
+}
+
+#progress-circle {
+  stroke: red;
+  stroke-width: 12;
+  stroke-linecap: round;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  transition: stroke-dashoffset 0.6s ease, stroke 0.3s;
+}
+
+#circle-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px;
+  background: #22c55e;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#result {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
